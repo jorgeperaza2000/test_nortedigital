@@ -79,7 +79,3 @@
 Donde {id} sera el ID de la venta.
 
 ### Puede usar tinker para generar mas datos de prueba.
-```
-Donde {id} sera el ID de la venta.
-
-### Puede usar tinker para generar mas datos de prueba.
