@@ -15,10 +15,10 @@ class CreateDetailsTable extends Migration
     {
         Schema::create('details', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('sale_id');
+            $table->unsignedInteger('sale_id');
             $table->foreign('sale_id')->references('id')->on('sales');
             $table->integer('quantity');
-            $table->integer('product_id');
+            $table->unsignedInteger('product_id');
             $table->foreign('product_id')->references('id')->on('products');
             $table->decimal('price', 9,2);
             $table->decimal('sub_total', 9,2);
